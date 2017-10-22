@@ -443,10 +443,10 @@
 {
 	[super setSelected:selected];
 
-	CATransition *transition = [CATransition animation];
-	[transition setType:kCATransitionFade];
-	[transition setDuration:0.15];
-	[self.label.layer addAnimation:transition forKey:nil];
+// 	CATransition *transition = [CATransition animation];
+// 	[transition setType:kCATransitionFade];
+// 	[transition setDuration:0.15];
+// 	[self.label.layer addAnimation:transition forKey:nil];
 
 	self.label.font = self.selected ? self.highlightedFont : self.font;
 }
